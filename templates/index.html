@@ -1,0 +1,21 @@
+{%load static%}
+<link rel="stylesheet" type = "text/css" href="{%static 'css/bootstrap.css'%}"/>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include 'nav.html' %}
+
+    {% block content %}
+
+    {% endblock %} 
+    
+  <div class="carousel-inner" >
+    <div class="carousel-item active" data-bs-interval="10000">
+      <video width="920" height="600" controls autoplay src="../static/video/video.mp4" class="video-responsived-block w-100" alt=". ..">
+      
+    </div>
+  </div>
+</div>      
+  </body>
+</html>

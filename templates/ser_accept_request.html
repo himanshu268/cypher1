@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #e8eef7;
+                
+            }
+            h1{
+                text-align: center;
+            }
+            table, th, td {
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+                border: 1px solid black;
+                text-align: center;
+                margin-left: auto;  
+                margin-right: auto;  
+                /* margin-top: 10%; */
+                border-collapse: collapse;    
+                width: 800px;  
+            }
+            
+         </style>
+   
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>sending_request</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        
+    </head>
+    <body>
+        <a href='home_service'><img src="../static/img/logo.jpg" alt="SL" width="50" height="50"></a>
+        <h1>Accepted Requests</h1>
+        <table>
+            <tr>
+                <th>Usernames</th>
+                <th>Offered and accepted Price</th>
+            </tr>
+            {%for i,j in mylist%}
+            <tr>
+                <td>{{i}}</td>
+                <td>{{j}}</td>
+            </tr>
+            {%endfor%}
+            </table>
+       
+        <script src="" async defer></script>
+    </body>
+</html>
