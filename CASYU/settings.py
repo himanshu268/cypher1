@@ -15,6 +15,8 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+ALLOWED_HOSTS = ['18.234.194.135']  # Correct format
+
 
 
 # Quick-start development settings - unsuitable for production
