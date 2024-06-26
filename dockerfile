@@ -1,4 +1,3 @@
-# Use an official Python runtime as a parent image
 FROM python:3.9-slim
 
 # Set environment variables
@@ -9,7 +8,7 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /code
 
 # Copy the dependencies file to the working directory
-COPY ./docker-requirements.txt /code/
+COPY ./requirements.txt /code/
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
@@ -21,7 +20,7 @@ RUN apt-get update && apt-get install -y \
 # Install dependencies
 RUN pip install --upgrade pip
 RUN pip install Django==4.2.5
-RUN pip install -r docker-requirements.txt
+RUN pip install -r requirements.txt
 
 # Copy the current directory contents into the container at /code/
 COPY . /code/
